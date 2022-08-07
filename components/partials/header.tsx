@@ -7,14 +7,12 @@ import {
     Burger,
     useMantineTheme,
 } from "@mantine/core";
-import { IconHome, IconUserCircle } from "@tabler/icons";
+import { IconBrandGitlab, IconUserCircle } from "@tabler/icons";
 const useStyles = createStyles((theme) => ({
     inner: {
-        height: 56,
         display: "flex",
-        // justifyContent: "space-between",
         alignItems: "center",
-        paddingInline: 20,
+        width: "100%",
     },
     logo: {
         display: "flex",
@@ -39,8 +37,8 @@ function HeaderItem(props: headerProp) {
     return (
         <div className={classes.inner}>
             <UnstyledButton className={classes.logo}>
-                <IconHome size={28} strokeWidth={2} color={"black"} />
-                <span className={classes.logoText}>Library</span>
+                <IconBrandGitlab size={28} strokeWidth={2} color={"black"} />
+                <span className={classes.logoText}>Gamer</span>
             </UnstyledButton>
             <MediaQuery
                 largerThan="md"
@@ -57,7 +55,11 @@ function HeaderItem(props: headerProp) {
             <Menu transition="pop-top-right" width={150} position="left-start">
                 <Menu.Target>
                     <UnstyledButton pr={12}>
-                        <IconUserCircle size={28} strokeWidth={2} color={"black"} />
+                        <IconUserCircle
+                            size={28}
+                            strokeWidth={2}
+                            color={"black"}
+                        />
                     </UnstyledButton>
                 </Menu.Target>
                 <Menu.Dropdown>

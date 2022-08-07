@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     const { classes } = useStyle();
     return (
         <>
-            <span className={classes.span}>Book</span>
+            <span className={classes.span}>Category</span>
         </>
     );
 };

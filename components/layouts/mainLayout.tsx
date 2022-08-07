@@ -18,9 +18,7 @@ function MainLayout({ children }: LayoutsProps) {
     const router = useRouter();
 
     useEffect(() => {
-        if (opened) {
-            setOpened(!opened);
-        }
+        setOpened((o) => o == false);
     }, [router.asPath]);
     return (
         <>
@@ -38,7 +36,7 @@ function MainLayout({ children }: LayoutsProps) {
                     </Navbar>
                 }
                 header={
-                    <Header height={60} p="xs">
+                    <Header height={60} p="xs" style={{ display: "flex" }}>
                         {
                             <HeaderItem
                                 openNavbar={opened}

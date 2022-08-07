@@ -4,13 +4,13 @@ import { LinksGroup } from "../shared/navbar/navbarLink";
 
 const mockdata = [
     { label: "Dashboard", icon: IconHome, link: "/" },
+    { label: "Game", icon: IconHome, link: "/game" },
     {
-        label: "Market news",
+        label: "Master Data",
         icon: IconNotes,
         // initiallyOpened: true,
         links: [
-            { label: "Book", link: "/book" },
-            { label: "Forecasts", link: "/" },
+            { label: "Category", link: "/category" },
         ],
     },
 ];

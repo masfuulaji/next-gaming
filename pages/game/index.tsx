@@ -1,19 +1,17 @@
 import { createStyles } from "@mantine/core";
 import type { NextPage } from "next";
-import { useState } from "react";
 
 const useStyle = createStyles(() => ({
-    p: {
-        height: `1000px`,
-    },
+    span: {
+        color: "red"
+    }
 }));
 
 const Home: NextPage = () => {
     const { classes } = useStyle();
-    const [opened, setOpened] = useState(false);
     return (
         <>
-            <span className={classes.p}>Allo Bos</span>
+            <span className={classes.span}>Game</span>
         </>
     );
 };
