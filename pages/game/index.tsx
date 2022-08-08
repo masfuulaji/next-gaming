@@ -1,19 +1,19 @@
-import { createStyles } from "@mantine/core";
-import type { NextPage } from "next";
+import { createStyles } from '@mantine/core';
+import type { NextPage } from 'next';
 
 const useStyle = createStyles(() => ({
-    span: {
-        color: "red"
-    }
+  span: {
+    color: 'red',
+  },
 }));
 
 const Home: NextPage = () => {
-    const { classes } = useStyle();
-    return (
-        <>
-            <span className={classes.span}>Game</span>
-        </>
-    );
+  const { classes } = useStyle();
+  return (
+    <>
+      <span className={classes.span}>Game</span>
+    </>
+  );
 };
 
 export default Home;
