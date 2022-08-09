@@ -1,8 +1,7 @@
 import type { ReactElement } from 'react';
 import SecondLayout from '../../components/layouts/secondLayout';
-import type { NextPageWithLayout } from '../_app';
 
-const Page: NextPageWithLayout = () => {
+const Page = () => {
   return <p>hello world</p>;
 };
 
