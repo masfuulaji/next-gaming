@@ -1,4 +1,4 @@
-import { createStyles } from '@mantine/core';
+import { Card, createStyles } from '@mantine/core';
 import type { NextPage } from 'next';
 
 const useStyle = createStyles(() => ({
@@ -11,7 +11,9 @@ const Home: NextPage = () => {
   const { classes } = useStyle();
   return (
     <>
-      <span className={classes.span}>Game</span>
+      <Card shadow="sm" p="lg" radius="md" withBorder>
+        <span className={classes.span}>Game</span>
+      </Card>
     </>
   );
 };
